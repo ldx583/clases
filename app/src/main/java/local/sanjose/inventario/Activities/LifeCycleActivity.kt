@@ -24,7 +24,7 @@ class LifeCycleActivity : LifeCycleEventsActivity() {
         Toast.makeText(this,"CLick back again to exit this screen", Toast.LENGTH_LONG).show()
         Handler().postDelayed(Runnable { exitEnable = false}, 2000)
     }
-
+//
 
 
 }
