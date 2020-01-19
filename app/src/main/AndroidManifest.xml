@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Activities.SE_CREO_SOLO">
+        </activity>
         <activity android:name=".Activities.LifeCycleEventsActivity">
         </activity>
         <activity android:name=".Activities.SharedPreferencesActivity">
