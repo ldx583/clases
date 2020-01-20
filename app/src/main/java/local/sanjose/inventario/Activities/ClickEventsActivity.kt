@@ -26,6 +26,7 @@ class ClickEventsActivity : AppCompatActivity(), View.OnLongClickListener {
         btn1.setOnLongClickListener(this)
         btn2.setOnLongClickListener(this)
         btn3.setOnLongClickListener(this)
+
     }
 
     //Regla obligatoria para clicks en XMLS:
@@ -37,18 +38,15 @@ class ClickEventsActivity : AppCompatActivity(), View.OnLongClickListener {
 
     private fun clickInLine(){
         val btn = findViewById<Button>(R.id.btnClickInLine)
-        btn.setOnClickListener { Toast.makeText(this, "Clic in Line!", Toast.LENGTH_LONG).show() }
+        btn.setOnClickListener { Toast.makeText(this, "Click in Line!", Toast.LENGTH_LONG).show() }
     }
 
-    override fun onLongClick(view: View): Boolean {
-        when(view.id){
+    override fun onLongClick(v: View): Boolean {
+        when(v.id){
            R.id.btnClickMulti1 -> Toast.makeText(this,"Click Multi 1!", Toast.LENGTH_LONG).show()
            R.id.btnClickMulti2 -> Toast.makeText(this,"Click Multi 2!", Toast.LENGTH_LONG).show()
            R.id.btnClickMulti3 -> Toast.makeText(this,"Click Multi 3!", Toast.LENGTH_LONG).show()
         }
         return true
     }
-
-
-
 }
