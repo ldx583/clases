@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="local.sanjose.inventario">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
             android:allowBackup="true"
@@ -9,8 +10,6 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Activities.SE_CREO_SOLO">
-        </activity>
         <activity android:name=".Activities.LifeCycleEventsActivity">
         </activity>
         <activity android:name=".Activities.SharedPreferencesActivity">
