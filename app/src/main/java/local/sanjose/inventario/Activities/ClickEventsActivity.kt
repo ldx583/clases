@@ -47,6 +47,7 @@ class ClickEventsActivity : AppCompatActivity(), View.OnLongClickListener {
            R.id.btnClickMulti2 -> Toast.makeText(this,"Click Multi 2!", Toast.LENGTH_LONG).show()
            R.id.btnClickMulti3 -> Toast.makeText(this,"Click Multi 3!", Toast.LENGTH_LONG).show()
         }
+
         return true
     }
 }
