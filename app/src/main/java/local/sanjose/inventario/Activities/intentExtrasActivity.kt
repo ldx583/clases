@@ -12,15 +12,23 @@ class intentExtrasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intent_extras)
 
+        getIntentExtrasFromPreviousActivity()
+    }
+
+
+    private fun getIntentExtrasFromPreviousActivity(){
 
         val name = intent.getStringExtra("name")
         val lastName = intent.getStringExtra("lastName")
         val age = intent.getIntExtra("age", -1)
         val developer = intent.getBooleanExtra("developer",false)
 
-        textViewName.text = name
-        textViewLastName.text = lastName
-        textViewAge.text = "${age}"
-        checkBoxDeveloper.isChecked = developer
+        if(name != null && lastName != null && age >= 0){
+            textViewName.text = name
+            textViewLastName.text = lastName
+            textViewAge.text = "${age}"
+            checkBoxDeveloper.isChecked = developer
+        }
+
     }
 }
